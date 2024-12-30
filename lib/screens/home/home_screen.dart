@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
-    print("HomeScreen build");
     return Scaffold(
-      body: Center(child: Text("HomeScreen")),
+      appBar: AppBar(
+        title: Text('HomeScreen appBar 영역(index:0)'),
+      ),
+      // 수옵
+      body: Container(
+          color: Colors.orange[100],
+          child: Center(
+              child: Text("HomeScreen"))),
     );
   }
 }
